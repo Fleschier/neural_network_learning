@@ -19,6 +19,8 @@ import matplotlib.pyplot as plt
 x = torch.unsqueeze(torch.linspace(-1,1,100), dim=1)
 y = x.pow(2) + 0.2*torch.rand(x.size())
 
+print(type(x))      # <class 'torch.Tensor'>
+
 x,y = Variable(x), Variable(y)
 
 # plt.scatter(x.data.numpy(), y.data.numpy())
